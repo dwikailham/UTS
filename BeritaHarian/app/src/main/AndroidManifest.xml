@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dwikailham.beritaharian">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.dwikailham.beritaharian.UpdatePostActivity"
+            android:label="Edit Post"/>
+        <activity android:name="com.dwikailham.beritaharian.InsertPostActivity"
+            android:label="Insert Post"
+            android:parentActivityName="com.dwikailham.beritaharian.PostingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVY"
+                android:value="com.dhimmasbayu.lowongankerja1.PostingActivity"/>
+        </activity>
+        <activity android:name="com.dwikailham.beritaharian.PostingActivity"
+            android:label="Home"/>
+        <activity android:name="com.dwikailham.beritaharian.DetailPostingActivity"
+            android:label="Detail Post">
+        </activity>
+        <activity android:name="com.dwikailham.beritaharian.RegisterActivity"
+            android:label="Sign Up"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVIY"
+                android:value="com.dhimasbayu.lowongankerja1.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name="com.dwikailham.beritaharian.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lowongan Kerja</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="color_logo">
+        <item>Berita</item>
+        <!--<item>Blue</item>-->
+        <!--<item>White</item>-->
+        <!--<item>Arema</item>-->
+        <!--<item>Black</item>-->
+    </string-array>
+</resources>
